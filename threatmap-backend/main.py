@@ -78,7 +78,7 @@ async def generate_attack_data():
             "timestamp": datetime.now().isoformat()
         }
         yield attack
-        await asyncio.sleep(random.uniform(0.5, 4.0))
+        await asyncio.sleep(random.uniform(0.5, 2.0))
 
 @app.websocket("/ws/live")
 async def websocket_endpoint(websocket: WebSocket):
